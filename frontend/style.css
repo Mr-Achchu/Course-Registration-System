@@ -1,0 +1,126 @@
+/* ===== Reset and Base Styling ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7fa;
+    color: #2c3e50;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* ===== Headings ===== */
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* ===== Buttons & Links ===== */
+a button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+a button:hover {
+    background-color: #2980b9;
+}
+
+button[type="submit"], button[type="reset"] {
+    padding: 10px 18px;
+    border-radius: 6px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+button[type="reset"] {
+    background-color: #e74c3c;
+}
+
+button[type="reset"]:hover {
+    background-color: #c0392b;
+}
+
+/* ===== Form Styling (Register Page) ===== */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* ===== Tables (Courses & Enrolled Students) ===== */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+    padding: 14px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    table, th, td {
+        font-size: 0.9rem;
+    }
+
+    a button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
